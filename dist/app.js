@@ -77,7 +77,7 @@ let tiles = L.tileLayer(tileURL, { attribution }).addTo(mymap);
 
 // Icon
 let issIcon = L.icon({
-  iconUrl: '../dist/img/PikPng.com_space-station-png_859150.PNG',
+  iconUrl: './img/PikPng.com_space-station-png_859150.PNG',
   iconSize: [50, 42],
   iconAnchor: [25, 21]
 });
