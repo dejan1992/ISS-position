@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+    integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+    crossorigin="" />
+
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    crossorigin=""></script>
+
+  <title>ISS position</title>
+
+  <style>
+    #map {
+      height: 500px;
+      width: 100%;
+    }
+  </style>
+</head>
+
+<body>
+  <section id="main">
+    <header>
+      <div id="title">
+        <h1>International space station position <i class="fas fa-map-marker-alt"></i></h1>
+      </div>
+    </header>
+    <section class="map-types">
+      <div class="map-types__box">
+        <a class="basic" href="">
+          <img src="../dist/img/basic.png" alt="basic map">
+        </a>
+        <p>Basic</p>
+      </div>
+      <div class="map-types__box">
+        <a class="pastel" href="">
+          <img src=" ../dist/img/pastel.png" alt="pastel map">
+        </a>
+        <p>Pastel</p>
+      </div>
+      <div class="map-types__box">
+        <a class="outdoor" href="">
+          <img src=" ../dist/img/outdoor.png" alt="outdoor map">
+        </a>
+        <p>Outdoor</p>
+      </div>
+      <div class="map-types__box">
+        <a class="voyager" href="">
+          <img src=" ../dist/img/voyager.png" alt="voyager map">
+        </a>
+        <p>Voyager</p>
+      </div>
+      <div class="map-types__box">
+        <a class="hybrid" href="">
+          <img src="../dist/img/hybrid.png" alt="hybrid map">
+        </a>
+        <p>Hybrid</p>
+      </div>
+
+    </section>
+    <section id="map-section">
+      <div id="map"></div>
+
+      <div id="info">
+        <h2> <i class="fas fa-info-circle"></i> DETAILS</h2>
+        <p>Latitude: <span id="lat"></span> °</p>
+        <p>Longitude: <span id="lon"></span> °</p>
+        <p>Altitude: <span id="alt"></span> km</p>
+        <p>Speed: <span id="vel"></span> km</p>
+        <p>Visibility: <span id="vis"></span></p>
+        <p>Solar Latitude: <span id="s-lat"></span> °</p>
+        <p>Solar Longitude: <span id="s-lon"></span> °</p>
+        <div class="logo">
+          <p>SINCE</p>
+          <img id='logo' src="../../dist/img/logo.png" alt="">
+          <p>1998</p>
+        </div>
+      </div>
+    </section>
+  </section>
+  <footer>
+    <p> &copy;2021 International Space Station</p>
+  </footer>
+  <script type="module" src="app.js"></script>
+</body>
+
+</html>

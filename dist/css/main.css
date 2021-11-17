@@ -1,0 +1,192 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body {
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.6;
+  font-size: 1rem;
+  color: 333;
+}
+
+#title {
+  margin: auto;
+  margin-bottom: 20px;
+  font-size: 1.6rem;
+  text-align: center;
+  padding: 20px 0;
+  text-transform: uppercase;
+}
+
+.map-types {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 20px;
+  padding: 0 10px;
+}
+
+.map-types__box {
+  margin: 0 15px;
+  margin-bottom: 10px;
+}
+
+.map-types__box .basic,
+.map-types__box .pastel,
+.map-types__box .outdoor,
+.map-types__box .voyager,
+.map-types__box .hybrid {
+  width: 60px;
+  height: 60px;
+  display: block;
+  -webkit-transition: 1s;
+  transition: 1s;
+  border: none;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.map-types__box .basic:hover,
+.map-types__box .pastel:hover,
+.map-types__box .outdoor:hover,
+.map-types__box .voyager:hover,
+.map-types__box .hybrid:hover {
+  -webkit-transform: scale(0.96);
+          transform: scale(0.96);
+}
+
+.map-types img {
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.map-types p {
+  margin-top: 5px;
+  font-size: 14px;
+  text-align: center;
+}
+
+#map-section {
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 20px;
+  margin-bottom: 20px;
+  height: 500px;
+}
+
+#map-section #map {
+  border-radius: 10px;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#map-section #info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: 20px;
+  background-color: white;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  height: 100%;
+  font-weight: 600;
+  line-height: 2;
+  padding: 20px;
+  width: 500px;
+  border-radius: 10px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6))), url(../../dist/img/doug.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6)), url(../../dist/img/doug.jpg);
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#map-section #info h2 {
+  letter-spacing: 4px;
+}
+
+#map-section #info p {
+  border-bottom: 1px dotted #727272;
+}
+
+#map-section #info span {
+  color: #64ff64;
+}
+
+#map-section #info .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+#map-section #info .logo p {
+  border: none;
+}
+
+#map-section #info .logo img {
+  height: 100px;
+  margin: 0 15px;
+}
+
+footer {
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+}
+
+@media (max-width: 1000px) {
+  #title {
+    font-size: 1rem;
+  }
+  #map-section {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: auto;
+  }
+  #map-section #info {
+    width: 100%;
+    margin: 20px 0 auto;
+    height: 500px;
+  }
+}
+/*# sourceMappingURL=main.css.map */

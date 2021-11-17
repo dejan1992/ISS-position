@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
+
+//reset
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body{
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.6;
+  font-size:1rem;
+  color: 333;
+}
+
+#title{
+  margin: auto;
+  margin-bottom: 20px;
+  font-size: 1.6rem;
+  text-align: center;
+  padding: 20px 0;
+  text-transform: uppercase;
+}
+
+.map-types{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+  padding: 0 10px;
+
+  &__box{
+    margin:0 15px;
+    // position:relative;
+    margin-bottom: 10px;
+
+    .basic,
+    .pastel,
+    .outdoor,
+    .voyager,
+    .hybrid{
+      width: 60px;
+      height: 60px;
+      display: block;
+      transition: 1s;
+      border: none;
+      transition: 0.3s;
+      
+      &:hover{
+        transform:scale(0.96)
+       }
+    }
+  }
+
+  img{
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  p{
+    margin-top: 5px;
+    font-size: 14px;
+    text-align: center;
+  }
+}
+
+#map-section{
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  margin-bottom: 20px;
+  height: 500px;
+
+  #map{
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+#info{
+  h2{
+    letter-spacing: 4px;
+  }
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 20px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  height: 100%;
+  font-weight: 600;
+  line-height: 2;
+  padding:20px;
+  width: 500px;
+  border-radius: 10px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6)), url(../../dist/img/doug.jpg);
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-size: cover;
+  p{
+    border-bottom: 1px dotted rgb(114, 114, 114);
+  }
+  span{
+    color: rgb(100, 255, 100);
+  }
+    .logo{
+      display: flex;
+      justify-content:center;
+      align-items:center;
+      width: 100%;
+      height: 100%;
+      
+      p{
+        border: none;
+      }
+   
+  img{
+    height:100px;
+    margin: 0 15px;
+    // width: 60px;
+  }
+}
+}
+
+}
+
+footer{
+  width: 100%;
+  padding:20px;
+  text-align: center;
+}
+
+@import 'media';
